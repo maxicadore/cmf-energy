@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CMF-Energy - Energía Fotovoltaica en Peñíscola</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">CMF-<span>Energy</span></a>
+      <nav class="main-nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="cta">Presupuesto</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Soluciones fotovoltaicas para hogares, campos y motorhomes</h1>
+        <p>Instalación, mantenimiento y kits especializados para caravanas y camping. Tecnología sostenible, instalación profesional y soporte local en Peñíscola.</p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn primary">Solicitar presupuesto</a>
+          <a href="#simulador" class="btn ghost">Usar simulador</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section services">
+      <div class="container">
+        <h2>Nuestros servicios</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Instalaciones residenciales</h3>
+            <p>Diseño y montaje de sistemas fotovoltaicos para viviendas, con análisis de orientación y rendimiento.</p>
+          </div>
+          <div class="card">
+            <h3>Proyectos agrícolas</h3>
+            <p>Sistemas para fincas y campos: bombeo solar, suministro para instalaciones rurales y granjas.</p>
+          </div>
+          <div class="card">
+            <h3>Kits para motorhomes</h3>
+            <p>Kits adaptados para caravanas y campers: autonomía, baterías y soluciones híbridas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tienda" class="section tienda">
+      <div class="container">
+        <h2>Tienda</h2>
+        <p>Próximamente: venta de paneles, inversores y kits listos para instalar.</p>
+        <div class="product-grid">
+          <div class="product">
+            <img src="assets/panel.jpg" alt="Panel solar">
+            <h4>Panel Solar 330W</h4>
+            <p>Panel policristalino 330W, garantía 10 años.</p>
+            <button class="btn">Agregar al carrito</button>
+          </div>
+          <div class="product">
+            <img src="assets/inverter.jpg" alt="Inversor">
+            <h4>Inversor 3kW</h4>
+            <p>Inversor monofásico para sistemas domésticos.</p>
+            <button class="btn">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="simulador" class="section simulador">
+      <div class="container">
+        <h2>Simulador solar (beta)</h2>
+        <p>Introduce dirección o coordenadas, y estimaremos la orientación, potencia y ahorro anual.</p>
+        <form id="sim-form" class="sim-form">
+          <label>Dirección o coordenadas (lat,lon)<input type="text" id="coords" placeholder="39.9833,-0.2899"></label>
+          <label>Consumo anual estimado (kWh)<input type="number" id="consumo" value="3500"></label>
+          <button class="btn primary" type="button" id="sim-btn">Calcular estimación</button>
+        </form>
+        <div id="sim-result" class="sim-result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section about">
+      <div class="container">
+        <h2>Sobre CMF-Energy</h2>
+        <p>CMF-Energy es una empresa familiar especializada en soluciones fotovoltaicas para la zona de Peñíscola. Nuestro equipo combina formación técnica y atención personalizada para ofrecer proyectos eficientes y de calidad.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contacto</h2>
+          <p>Solicitá un presupuesto rápido completando el formulario o contactándonos por WhatsApp.</p>
+          <ul>
+            <li>Mail: <a href="mailto:info@cmf-energy.com">info@cmf-energy.com</a></li>
+            <li>Tel: +34 600 000 000</li>
+            <li>Dirección: Peñíscola, Castellón, España</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>Nombre<input type="text" id="name" required></label>
+          <label>Email<input type="email" id="email" required></label>
+          <label>Mensaje<textarea id="message"></textarea></label>
+          <button class="btn primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© CMF-Energy 2025. Energía limpia para Peñíscola.</p>
+    </div>
+  </footer>
+</body>
+</html>
