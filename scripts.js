@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function(){
-  const contactForm = document.getElementById('contact-form');
-  contactForm.addEventListener('submit', function(e){
+  const form = document.getElementById('presupuesto-form');
+  form.addEventListener('submit', function(e){
     e.preventDefault();
-    alert('Gracias. Su mensaje fue enviado (simulado).');
-    contactForm.reset();
+    alert('Gracias, su solicitud de presupuesto fue enviada (simulado).');
+    form.reset();
   });
 });

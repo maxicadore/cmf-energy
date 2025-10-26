@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CMF-Energy - Energía Fotovoltaica en Peñíscola</title>
+  <title>CMF-Energy - Energía Fotovoltaica</title>
   <link rel="stylesheet" href="styles.css">
   <script src="scripts.js" defer></script>
 </head>
@@ -13,69 +13,106 @@
       <a href="#" class="logo">CMF-<span>Energy</span></a>
       <nav class="main-nav">
         <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#presupuesto">Presupuesto</a>
         <a href="#nosotros">Quiénes somos</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>CMF-Energy — Soluciones fotovoltaicas en Peñíscola</h1>
-        <p>Instalaciones residenciales, comerciales y para motorhomes. Tecnología sostenible con atención profesional y personalizada.</p>
-        <a href="#contacto" class="btn primary">Contactanos</a>
-      </div>
-    </section>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Soluciones Fotovoltaicas Profesionales</h1>
+      <p>Instalaciones residenciales, agrícolas y para motorhomes con atención personalizada.</p>
+      <a href="#presupuesto" class="btn primary">Solicitar Presupuesto</a>
+    </div>
+  </section>
 
-    <section id="servicios" class="section services">
-      <div class="container">
-        <h2>Nuestros servicios</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Instalaciones residenciales</h3>
-            <p>Montaje de sistemas fotovoltaicos para hogares, optimización de rendimiento y orientación de paneles.</p>
-          </div>
-          <div class="card">
-            <h3>Proyectos agrícolas</h3>
-            <p>Suministro de energía solar para fincas y campos: bombeo solar y soluciones rurales eficientes.</p>
-          </div>
-          <div class="card">
-            <h3>Kits para motorhomes</h3>
-            <p>Soluciones para caravanas y campers: autonomía, baterías y kits adaptados a cada necesidad.</p>
-          </div>
+  <section id="servicios" class="section services">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="assets/residencial.jpg" alt="Residencial">
+          <h3>Instalaciones Residenciales</h3>
+          <p>Sistemas solares para hogares con optimización de paneles y ahorro energético.</p>
+        </div>
+        <div class="card">
+          <img src="assets/agricola.jpg" alt="Agrícola">
+          <h3>Proyectos Agrícolas</h3>
+          <p>Bombeo solar, energía para campos y fincas, soluciones eficientes y sostenibles.</p>
+        </div>
+        <div class="card">
+          <img src="assets/motorhome.jpg" alt="Motorhome">
+          <h3>Kits para Motorhomes</h3>
+          <p>Autonomía completa para caravanas y campers con baterías y kits adaptados.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="nosotros" class="section about">
-      <div class="container">
-        <h2>Quiénes somos</h2>
-        <p>CMF-Energy es una empresa familiar con experiencia en instalaciones fotovoltaicas en Peñíscola. Combinamos formación técnica y atención personalizada para ofrecer soluciones de calidad y sostenibles.</p>
-      </div>
-    </section>
-
-    <section id="contacto" class="section contact">
-      <div class="container contact-grid">
-        <div>
-          <h2>Contacto</h2>
-          <p>Completa el formulario o contáctanos directamente para más información sobre nuestros servicios.</p>
-          <ul>
-            <li>Mail: <a href="mailto:info@cmf-energy.com">info@cmf-energy.com</a></li>
-            <li>Tel: +34 600 000 000</li>
-            <li>Dirección: Peñíscola, Castellón, España</li>
-          </ul>
+  <section id="galeria" class="section galeria">
+    <div class="container">
+      <h2>Nuestra Galería</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="assets/instalacion1.jpg" alt="Instalación 1">
+          <h3>Residencial 1</h3>
+          <button class="btn secondary">Ver más</button>
         </div>
-        <form class="contact-form" id="contact-form">
-          <label>Nombre<input type="text" id="name" required></label>
-          <label>Email<input type="email" id="email" required></label>
-          <label>Mensaje<textarea id="message"></textarea></label>
-          <button class="btn primary" type="submit">Enviar</button>
-        </form>
+        <div class="card">
+          <img src="assets/instalacion2.jpg" alt="Instalación 2">
+          <h3>Agrícola 1</h3>
+          <button class="btn secondary">Ver más</button>
+        </div>
+        <div class="card">
+          <img src="assets/instalacion3.jpg" alt="Instalación 3">
+          <h3>Motorhome 1</h3>
+          <button class="btn secondary">Ver más</button>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <section id="presupuesto" class="section presupuesto">
+    <div class="container">
+      <h2>Solicitar Presupuesto</h2>
+      <form id="presupuesto-form">
+        <label>Nombre<input type="text" id="name" required placeholder="Tu nombre"></label>
+        <label>Email<input type="email" id="email" required placeholder="correo@ejemplo.com"></label>
+        <label>Teléfono<input type="tel" id="phone" placeholder="+34 600 000 000"></label>
+        <label>Tipo de instalación
+          <select id="tipo" required>
+            <option value="">Seleccione</option>
+            <option value="residencial">Residencial</option>
+            <option value="agricola">Agrícola</option>
+            <option value="motorhome">Motorhome</option>
+          </select>
+        </label>
+        <label>Detalles<textarea id="details" placeholder="Cuéntanos tu proyecto..."></textarea></label>
+        <button type="submit" class="btn primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section about">
+    <div class="container">
+      <h2>Quiénes Somos</h2>
+      <p>CMF-Energy es una empresa familiar con experiencia en energía fotovoltaica. Combinamos formación técnica y atención personalizada para ofrecer soluciones de calidad y sostenibles.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="section contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <ul>
+        <li>Mail: <a href="mailto:info@cmf-energy.com">info@cmf-energy.com</a></li>
+        <li>Tel: +34 600 000 000</li>
+        <li>Dirección: Peñíscola, Castellón, España</li>
+      </ul>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container">
